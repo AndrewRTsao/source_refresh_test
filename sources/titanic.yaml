@@ -1,6 +1,7 @@
 # Visit https://docs.rilldata.com/reference/project-files/sources to learn more about Rill source files.
 
-type: "duckdb"
-sql: "select * from read_csv('s3://andrew-s3-test/titanic.csv', auto_detect=true, ignore_errors=1, header=true)"
+type: "s3"
+uri: "s3://andrew-s3-test/titanic.csv"
+
 refresh:
-  cron: * * * * *
+  cron: '*/2 * * * *'
