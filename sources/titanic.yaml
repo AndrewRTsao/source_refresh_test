@@ -2,6 +2,3 @@
 
 type: "s3"
 uri: "s3://andrew-s3-test/titanic.csv"
-
-refresh:
-  cron: '*/2 * * * *'
