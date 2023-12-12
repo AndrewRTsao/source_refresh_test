@@ -3,7 +3,7 @@ compiler: rillv1
 title: "Test Source Refresh project"
 sources:
   refresh:
-    every: 1m
+    cron: */2 * * * *
 
 # These are example mock users to test your security policies.
 # For more information, see the documentation: https://docs.rilldata.com/develop/security
